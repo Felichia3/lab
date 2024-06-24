@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'ladiosa';
+    src: url(fonts/ladiosa.ttf) ;
+}
+@font-face {
+    font-family: 'Lighthaus';
+    src: url(fonts/Lighthaus.otf) ;
+}
+@font-face {
+    font-family: 'Deco';
+    src: url(fonts/Los-Angeles-Deco.ttf) ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1240px;
+    padding: 0 100px;
+}
+h2 {
+    font-family: 'Lighthaus';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+p {
+    font-family: 'Lighthaus';
+}
+//header//
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+.main-menu {
+    font-family: 'ladiosa';
+    font-size: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu__link {
+    margin-left: 130px;
+}
+.main-menu__item {
+    color: black;
+    text-decoration: none;
+}
+
+.aboutUs, .aboutUs_text {
+    padding-top: 50px;
+}
+
+.lk {
+    padding-top: 50px;
+    text-align: center;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.name {
+    font-size: 25px;
+}
+.text {
+    padding-top: 20px;
+}
+.photo, .send {
+    margin-top: 30px;
+}
+.photo_button {
+    background-color: #D9D9D9;
+    padding: 8px 66px;
+    font-family: 'Lighthaus';
+    font-size: 10px;
+    border-radius: 10px;
+    border: 0;
+}
+.send_button {
+    background-color: #000;
+    color: #fff; 
+    padding: 8px 80px;
+    font-family: 'Lighthaus';
+    font-size: 10px;
+    border-radius: 10px;
+    border: 0;
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .logo img {
+        width: 80%;
+        height: auto;
+    }
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .main-menu__link {
+        margin: 10px 0;
+    }
+    .main-menu__item {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+    .lk form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .options {
+        flex-direction: column;
+        align-items: center;
+    }
+    .paragraph {
+        margin: 10px 0;
+    }
+    .photo_button, .send_button {
+        padding: 8px 40px;
+    }
+}

@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "ladiosa";
+  src: url(fonts/ladiosa.ttf);
+}
+@font-face {
+  font-family: "Lighthaus";
+  src: url(fonts/Lighthaus.otf);
+}
+@font-face {
+  font-family: "Deco";
+  src: url(fonts/Los-Angeles-Deco.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 100px;
+}
+
+h2 {
+  font-family: "Lighthaus";
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.main-menu {
+  font-family: "ladiosa";
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu__link {
+  margin-left: 130px;
+}
+
+.main-menu__item {
+  color: black;
+  text-decoration: none;
+}
+
+.women {
+  padding-top: 80px;
+}
+
+.sample {
+  font-family: "Deco";
+  font-size: 35px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.cards {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cards_models {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.cards_text {
+  font-family: "Lighthaus";
+  font-size: 25px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+  .main-menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .main-menu__link {
+    margin: 10px 0;
+  }
+  .main-menu__item {
+    font-size: 20px;
+  }
+  .women h2, .sample, .cards_text {
+    text-align: center;
+  }
+  .sample {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .cards {
+    justify-content: center;
+  }
+  .cards_models {
+    width: 100%;
+    padding-top: 15px;
+  }
+  .cards_models img {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=models.css.map */

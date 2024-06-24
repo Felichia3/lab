@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'ladiosa';
+    src: url(fonts/ladiosa.ttf) ;
+}
+@font-face {
+    font-family: 'Lighthaus';
+    src: url(fonts/Lighthaus.otf) ;
+}
+@font-face {
+    font-family: 'Deco';
+    src: url(fonts/Los-Angeles-Deco.ttf) ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1240px;
+    padding: 0 100px;
+}
+h2 {
+    font-family: 'Lighthaus';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+//header//
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+.main-menu {
+    font-family: 'ladiosa';
+    font-size: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.main-menu__link {
+    margin-left: 130px;
+}
+.main-menu__item {
+    color: black;
+    text-decoration: none;
+}
+
+//contacts//
+.contacts {
+    padding-top: 60px;
+}
+.info_contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;
+}
+.text_contacts {
+    font-family: 'ladiosa';
+    font-size: 20px;
+}
+
+//staff//
+.staff {
+    display: flex;
+    justify-content: space-between;
+}
+.staff p {
+    font-family: 'ladiosa';
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+//location//
+.location {
+    padding-top: 60px;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+//footer//
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 100px 30px 25px 30px;
+}
+.socials_link {
+    padding-left: 30px;
+}
+.copyright {
+    font-family: 'Lighthaus';
+    font-size: 15px;
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-menu {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .main-menu__link {
+        margin: 10px 0;
+    }
+    .contacts, .staff, .location, .footer {
+        padding-top: 20px;
+    }
+    .info_contacts, .staff {
+        flex-direction: column;
+        align-items: center;
+    }
+    .map {
+        width: 100%;
+        height: auto;
+    }
+    h2, .text_contacts, .staff p {
+        text-align: center;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 15px 20px;
+    }
+    .socials_link {
+        padding: 0 10px;
+    }
+}

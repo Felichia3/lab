@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастинг</title>
+    <link rel="stylesheet" href="casting.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><a href="index.php"><img src="img/Главная/logo.svg"/></a></div>
+            <div class="menu">
+                <ul class="main-menu">
+                    <li class="main-menu__link"><a href="aboutUs.html" class="main-menu__item">О нас</a></li>
+                    <li class="main-menu__link"><a href="casting.html" class="main-menu__item">Кастинг</a></li>
+                    <li class="main-menu__link"><a href="contacts.html" class="main-menu__item">Контакты</a></li>
+                    <li class="main-menu__link"><a href="models.php" class="main-menu__item">Модели</a></li>
+                    <li class="main-menu__link"><a href="index.php" id="openModal" class="main-menu__item">Личный кабинет</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info-casting">
+            <p class="casting_text">Ведущее модельное агентство Mood Models проводит кастинг для пополнения базы данных новыми лицами. Мы ищем моделей с выдающимися природными данными и потенциалом для достижения успеха в индустрии моды и красоты.</p>
+            <div class="requirements">
+                <div class="requirements_text">
+                    <p class="title">Требования:</p>
+                    <p>* Женщины или мужчины в возрасте от 16 до 25 лет</p>
+                    <p>* Рост для женщин: не менее 172 см</p>
+                    <p>* Рост для мужчин: не менее 183 см</p>
+                    <p>* Яркая и запоминающаяся внешность</p>
+                    <p>* Уверенность на камеру</p>
+                    <p>* Профессиональное портфолио не обязательно, но приветствуется</p>
+                </div>
+                <img src="img/Кастинг/37d9299d83ad7c912f5a2eb98c57169a 1.png">
+            </div>
+            <p class="record">Для записи на кастинг писать на почту kastingMoodModels@gmail.com</p>
+            <div class="dates">
+                <p>Важные даты:</p>
+                <br>
+                <p>* Заявки принимаются до 31.07.24</p>
+                <p>* Кастинг состоится в 04.08.24</p>
+                <p>* Адрес кастинга: Москва, Большая Сухаревская пл. 16/18с1, 3 подъезд, 5 этаж, офис 23</p>
+                <br>
+                <p>Мы с нетерпением ждем встречи с новыми лицами и поможем им раскрыть свой потенциал в качестве моделей.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form">
+            <form action="casting.php" method="post">
+                <label>
+                    Имя Фамилия
+                    <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                </label>
+                <label>
+                    E-mail
+                    <input type="text" id="email" name="email" placeholder="example@email.com" required>
+                </label>
+                <label>
+                    Личный коментарий
+                    <textarea id="message" name="message" required></textarea>
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <img alt="arrow" src="img/footer/arrow.png"/>
+        <div class="socials">
+            <a href="" class="socials_link"><img alt="instagram" src="img/footer/inst.svg"/></a>
+            <a href="" class="socials_link"><img alt="Vk" src="img/footer/vk.svg"/></a>
+            <a href="" class="socials_link"><img alt="telegram" src="img/footer/tg.svg"/></a>
+        </div>
+        <p class="copyright">©Mood models 2024</p>
+    </footer>
+</body>
+</html>

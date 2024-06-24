@@ -1,0 +1,276 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "ladiosa";
+  src: url(fonts/ladiosa.ttf);
+}
+@font-face {
+  font-family: "Lighthaus";
+  src: url(fonts/Lighthaus.otf);
+}
+@font-face {
+  font-family: "Deco";
+  src: url(fonts/Los-Angeles-Deco.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.main-menu {
+  font-family: "ladiosa";
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu__link {
+  margin-left: 130px;
+}
+
+.main-menu__item {
+  color: black;
+  text-decoration: none;
+}
+
+.banner {
+  background-image: url(img/Главная/bg.png);
+  width: 1240px;
+  height: 781px;
+  display: flex;
+  justify-content: right;
+  margin-top: 25px;
+}
+
+.text-blok {
+  position: absolute;
+  text-align: right;
+}
+
+.title {
+  font-family: "Lighthaus";
+  font-size: 150px;
+  padding-right: 50px;
+}
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.text_column {
+  font-family: "Lighthaus";
+  font-size: 30px;
+  padding-top: 25px;
+}
+
+.info {
+  padding-top: 100px;
+}
+
+.title_info {
+  font-family: "Lighthaus";
+  font-size: 40px;
+}
+
+.info_content {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slogan_info {
+  font-family: "Lighthaus";
+  font-size: 25px;
+}
+
+.text_info {
+  font-family: "ladiosa";
+  font-size: 20px;
+}
+
+.img-bottom {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 100px 30px 25px 30px;
+}
+
+.socials_link {
+  padding-left: 30px;
+}
+
+.copyright {
+  font-family: "Lighthaus";
+  font-size: 15px;
+}
+
+.popup, .auth {
+  display: none; /* Скрыть модальные окна по умолчанию */
+  position: fixed; /* Позиционирование относительно окна браузера */
+  left: 50%; /* Центрирование по горизонтали */
+  top: 50%; /* Центрирование по вертикали */
+  transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+  z-index: 1000; /* Убедиться, что модальное окно находится над другими элементами */
+}
+
+.popup.active, .auth.active {
+  display: block; /* Показать активное модальное окно */
+}
+
+.reg, .auth {
+  background-color: #F7F1ED;
+  width: 457px;
+  border-radius: 30px;
+  font-family: "Lighthaus";
+  text-decoration: none;
+  color: #000;
+}
+
+.form {
+  padding: 40px;
+}
+
+label, input, textarea, button, select {
+  background-color: #D7D7D7;
+  font-size: 10px;
+  line-height: 1.2;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  resize: none;
+}
+
+form {
+  width: 980px;
+  max-width: 90%;
+}
+
+label {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  padding: 15px;
+  width: 100%;
+}
+
+button {
+  font-family: "Lighthaus";
+  margin-top: 35px;
+  padding: 11px 85px;
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+}
+
+.nav {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  .header, .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-menu__link {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  .banner {
+    background-image: url("img/Главная/bg-2.png");
+    width: 319px;
+    height: 201px;
+  }
+  .text-blok {
+    position: static;
+    text-align: center;
+  }
+  .title {
+    font-size: 50px;
+  }
+  .grid {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .text_column {
+    text-align: center;
+  }
+  .info_content {
+    flex-direction: column;
+  }
+  .slogan_info, .text_info {
+    text-align: center;
+  }
+  .form {
+    width: auto;
+  }
+  .reg, .auth {
+    width: 90%;
+  }
+  .img-bottom {
+    max-width: 100%;
+    padding-top: 50px;
+  }
+  .img_column {
+    max-width: 100%;
+  }
+  .socials_link {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+  .popup, .auth {
+    width: 80%;
+  }
+  .form {
+    width: 90%;
+  }
+  .nav {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .reg, .auth {
+    width: 100%;
+    margin: 0 20px;
+    box-sizing: border-box;
+  }
+  label, input, textarea, button, select {
+    font-size: 10px;
+    width: 90%;
+  }
+  button {
+    padding: 15px 70px; /* Уменьшение отступов кнопки */
+  }
+}/*# sourceMappingURL=style.css.map */
